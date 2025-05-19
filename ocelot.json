@@ -1,0 +1,44 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/v1/flights",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "gd-airline-ticket-api.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "UpstreamPathTemplate": "/flights",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/v1/tickets/buy",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "gd-airline-ticket-api.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "UpstreamPathTemplate": "/tickets/buy",
+        "UpstreamHttpMethod": [ "POST" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/v1/tickets/checkin",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "gd-airline-ticket-api.azurewebsites.net",
+            "Port": 443
+          }
+        ],
+        "UpstreamPathTemplate": "/tickets/checkin",
+        "UpstreamHttpMethod": [ "POST" ]
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "http://localhost:5173"
+    }
+  }
+  
