@@ -66,6 +66,13 @@ This project is an API Gateway implemented using **Ocelot** for routing requests
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 
 
+### Video Link
+https://youtu.be/j5mACjZvCzA
+
+
+
+
+
 
 
 ## 👨‍💻 Authors
